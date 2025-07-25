@@ -16,7 +16,7 @@ The pipelines automate file ingestion, filtering, transformation, enrichment, an
 ## **Architecture**
 - Architecture Diagram -> ![Arch Dgm](architecture%20flow.png)
 
-# Pipeline 1: Cleaning Pipeline**
+# Pipeline 1: Cleaning Pipeline
 ### **Overview**
 - Reads all CSV files (patients, doctors, visits) from raw folder.
 - Cleans each file by applying:
@@ -62,7 +62,7 @@ The pipelines automate file ingestion, filtering, transformation, enrichment, an
     
 
 ### **Triggers**
-- **Event Trigger:** 
+- **Scheduled Trigger:** The trigger will start wrt time we specify (like 22nd each month 9 AM).
 
 ### **Learnings**
 - Using Get Metadata + ForEach + If Condition for file-wise dynamic processing.
